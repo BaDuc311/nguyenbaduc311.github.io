@@ -1,61 +1,41 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="vi">
 <head>
-    <title>Happy Birthday</title>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <title>I Love You</title>
+    <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="loader">
-                <button id="play">Start</button>
-            </div>
+    
+    <div id="drag-container">
+        <div id="spin-container">
+          <img src="./img/img1.jpg" alt="">
+          <img src="./img/img2.jpg" alt="">
+          <img src="./img/img3.jpg" alt="">
+          <img src="./img/img4.jpg" alt="">
+          <img src="./img/img5.jpg" alt="">
+          <img src="./img/img6.jpg" alt="">
+          <img src="./img/img7.jpg" alt="">
+          <img src="./img/TNT.png" alt="">
+          
+            <p>My Love</p>
+          
+        
         </div>
+        <div id="ground"></div>
+      </div>
+      
+      <div id="music-container"></div>
+      <div id="canva">
+      <canvas id="canvas"></canvas>
     </div>
-    <audio class="song" controls loop>
-        <source src="music2.mp3">
-        </source>
-        Your browser isn't invited for super fun audio time.
-    </audio>
-    <canvas id="confetti"></canvas>
-    <div class="main">
-        <div class="container pt-5">
-            <div class="row">
-
-                <div class="col-12 col-xl-6 mx-auto">
-                    <img src="img/banner.png" alt="">
-                </div>
-
-                <div class="col-12  text-center">
-                    <div id="name" class="area">11/09</div>
-                </div>
-
-                <div class="col-12 text-center">
-                    <div class="type-wrap">
-                        <div id="typed-strings" class="typing">
-                            <h2>Happy Birthday <i id="nae">Duyênn..!?</i></h2>
-                            <h2>Have a wonderful day</h2>
-                            <!-- <h2>Filled with joy and happiness.</h2> -->
-                        </div>
-                        <span id="typed" style="white-space:pre;"></span>
-                    </div>
-                </div>
-
-                <div class="col-12 col-xl-3 cake">
-                    <img src="img/cake.gif" alt="">
-                </div>
-            </div>
-        </div>
-        <img src="img/Balloon-Border.png" width="100%" class="balloon-border">
-    </div>
+    <audio src="./music.mp3" autoplay loop></audio>
+    <script src="main.js"></script>
 </body>
-<script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
-<script src="js/jquery.js"></script>
-<script src="js/typed.min.js"></script>
-<script src="js/script.js"></script>
-
 </html>
